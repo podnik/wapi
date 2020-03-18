@@ -1,0 +1,22 @@
+{
+  "name": "podnik/wapi",
+  "type": "library",
+  "description": "WEDOS API PHP Layer",
+  "keywords": ["api","php","wapi","wedos"],
+  "homepage": "https://github.com/podnik/wapi",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robert Mikšík",
+      "email": "robertmiksik@gmail.com",
+      "homepage": "https://miksik.cz",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
