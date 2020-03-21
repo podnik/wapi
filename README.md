@@ -9,7 +9,7 @@ Packagist repozitář: https://packagist.org/packages/podnik/wapi
 
 `composer require podnik/wapi`
 
-**POUŽITÍ**
+**PŘÍKLAD**
 
 ```php
 $wapi = new Wapi;
