@@ -4,19 +4,43 @@
 namespace Wapi;
 
 
+/**
+ * Class Request
+ * @package Wapi
+ */
 class Request
 {
+    /**
+     * @var
+     */
     public $user;
+    /**
+     * @var
+     */
     private $auth;
+    /**
+     * @var
+     */
     public $command;
+    /**
+     * @var
+     */
     public $cltrid;
+    /**
+     * @var
+     */
     public $data;
+    /**
+     * @var
+     */
     public $test;
 
     /**
      * Request constructor.
+     * @param string $command
+     * @param array $data
      */
-    public function __construct()
+    public function __construct($command,$data)
     {
         // POST data
         $post = 'request='.urlencode($request);
@@ -41,6 +65,13 @@ class Request
 
 // provedení volání
         $res = curl_exec($ch);
+    }
+
+    /**
+     * @return Response
+     */
+    public function send() {
+        return new Response();
     }
 
 

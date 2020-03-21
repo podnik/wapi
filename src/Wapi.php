@@ -41,4 +41,12 @@ class Wapi
     public function auth($user, $pass){
         $this->auth = sha1($user.sha1($pass).date('H', time()));
     }
+
+    /**
+     * @param $name
+     * @return Domain
+     */
+    public function domain($name) {
+        return new Domain($name);
+    }
 }
